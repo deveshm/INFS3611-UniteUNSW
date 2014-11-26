@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>UNIte UNSW</title>
+  <link rel="icon" type="image/png" href="style/logo-small.png" />
+  <meta name="description" content="UNIte unsw social media application and wiki" />
+  <meta name="keywords" content="unsw, unite, social, media, application, wiki, uniteunsw, infs3611, devesh, lee, jack, peter, sylvia" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/parse-1.2.18.min.js"></script>
+  <script type="application/x-javascript" src="js/parseaccount.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <img class="logo" src="style/logo.png" alt="logo" width="40%" />
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li class="current"><a href="account.html">Account</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li id="faq-tab"><a href="faq.html">FAQ</a><li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content" style="min-height:250px">
+      <div id="content_right">
+        <div class="sidebar">
+            <h3 id="current-courses">Current Courses</h3>
+        </div>
+      </div>
+      <div id="content_left">
+        <div id="ProfilePage">
+            <div id="LeftCol">
+                <div id="Photo">
+                    <img class="profile" src="style/profile.jpg" alt="profile" width="100%" /> 
+                </div>
+            </div>
+        </div>
+        <div id="Info">
+            <p>
+                <strong>Name:</strong>
+                <span id="userfullname"></span>
+            </p>
+            <p>
+                <strong>Email:</strong>
+                <span id="useremail"></span>
+            </p>
+            <br><br>
+            <select id="dropdown">
+                <option>Select a course below</option>
+            </select>
+            <button id="add-course-button" class="button" type="button">Add Course</button>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Copyright &copy; Unite. This is a UNSW assignment for INFS3611 by Devesh M, Peter B, Jack H, Sylvia Y, and Lee K.</p>
+    </div>
+  </div>
+</body>
+</html>

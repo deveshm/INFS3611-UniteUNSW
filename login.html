@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Login - UNIte</title>
+    <link rel="icon" type="image/png" href="style/logo-small.png" />
+    <link href="style/login-box.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/parse-1.2.18.min.js"></script>
+    <script type="application/x-javascript" src="js/parselogin.js"></script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+      Parse.initialize("b3RgrxIcSd3yugpd2Mc9kQqBE2796Qy6lBR8ril9", "nDjuXxxlKLmtZFNNJPfvF3vUuc6j5QeKL64vFdpZ");
+      window.fbAsyncInit = function() {
+          Parse.FacebookUtils.init({
+            appId      : '763706780329305', // Facebook App ID
+            status     : true, // check login status
+            cookie     : true, // enable cookies to allow Parse to access the session
+            xfbml      : true  // parse XFBML
+          });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "http://connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="login-box">
+        <H2>Login</H2>
+        <form name="logInForm">
+            <div id="login-box-name" style="margin-top:20px;">Email:</div>
+            <div id="login-box-field" style="margin-top:20px;">
+                <input id="input-username" type="text" name="email" class="form-login">
+            </div>
+            <div id="login-box-name">Password:</div>
+            <div id="login-box-field">
+                <input id="input-pw" type="password" name="pwd" class="form-login">
+            </div>
+            <br />
+            <span class="login-box-options"><input type="checkbox" name="1" value="1"> Remember Me <a href="index.html" style="margin-left:30px;">Sign Up</a></span>
+            <br /><br />
+            <input id="log_in_button" class="button" name="login" type="button" value="Login" style="margin-left:90px;"/>
+        </form>
+        <br><br><br>
+        
+        <button id='facebook' style="float: left;margin-left: 80px;">Sign-in with Facebook</button>
+    </div>
+</body>
+</html>

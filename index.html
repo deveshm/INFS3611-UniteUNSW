@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>UNIte UNSW</title>
+  <link rel="icon" type="image/png" href="style/logo-small.png" />
+  <meta name="description" content="UNIte unsw social media application and wiki" />
+  <meta name="keywords" content="unsw, unite, social, media, application, wiki, uniteunsw, infs3611, devesh, lee, jack, peter, sylvia" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="stylesheet" type="text/css" href="style/jcarousel.basic.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/parse-1.2.18.min.js"></script>
+  <script type="application/x-javascript" src="js/parseindex.js"></script>
+  <script type="application/x-javascript" src="js/jquery.jcarousel.min.js"></script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+    <script>
+      Parse.initialize("b3RgrxIcSd3yugpd2Mc9kQqBE2796Qy6lBR8ril9", "nDjuXxxlKLmtZFNNJPfvF3vUuc6j5QeKL64vFdpZ");
+      window.fbAsyncInit = function() {
+          Parse.FacebookUtils.init({
+            appId      : '763706780329305', // Facebook App ID
+            status     : true, // check login status
+            cookie     : true, // enable cookies to allow Parse to access the session
+            xfbml      : true  // parse XFBML
+          });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "http://connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <img class="logo" src="style/logo.png" alt="logo" width="40%" />
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li id="faq-tab"><a href="faq.html">FAQ</a><li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content" style="min-height:500px">
+      <div id="content_top">
+        <h3> A Collaborative University Course Wiki</h3>
+        <h2> View, edit, and share course notes with your peers.</h2>
+        <div class="jcarousel-wrapper" style="width:600px; height:400px">
+            <div class="jcarousel">
+                <ul>
+                    <li><img src="https://www.talentcove.com/blog/wp-content/uploads/2014/04/collaboration_TalentCove.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="https://mexicoinstitute.files.wordpress.com/2013/08/people-network.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="http://www.aub.edu.lb/units/ehmu/collaborations/PublishingImages/knowledgetree.jpg" width="600" height="400" alt=""></li>
+                </ul>
+            </div>
+
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+            
+            <p class="jcarousel-pagination">
+                
+            </p>
+        </div>
+      </div>
+      <div id="content_right">
+        
+      </div>
+      <div id="content_left">
+          
+      </div>
+    </div>
+    
+    <div id="welcome" class="welcome">
+        
+    </div>
+    
+    <div id="footer">
+      <p>Copyright &copy; Unite. This is a UNSW assignment for INFS3611 by Devesh M, Peter B, Jack H, Sylvia Y, and Lee K.</p>
+    </div>
+  </div>
+</body>
+</html>
